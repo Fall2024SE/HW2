@@ -56,11 +56,11 @@ def recombine(left_arr, right_arr):
             merged_arr[left_index + right_index] = right_arr[right_index]
             right_index += 1
 
-    while(right_index < len(right_arr)):
+    while right_index < len(right_arr):
         merged_arr[left_index + right_index] = right_arr[right_index]
         right_index += 1
 
-    while(left_index < len(left_arr)):
+    while left_index < len(left_arr):
         merged_arr[left_index + right_index] = left_arr[left_index]
         left_index += 1
 

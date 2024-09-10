@@ -1,6 +1,7 @@
 """Module to generate random array"""
 import rand
 
+
 def merge_sort(nums):
     """
     Sorts an array using the merge sort algorithm.

@@ -3,6 +3,7 @@ This module provides utility functions to generate random numbers
 """
 import secrets
 
+
 def random_array(arr):
     """
     Replaces each element in the input array with a random number between 1 and 20.

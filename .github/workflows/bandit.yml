@@ -22,3 +22,19 @@ jobs:
       with:
         name: bandit-results
         path: bandit_results.txt
+
+    - name: Count Bandit issues
+      run: |
+        HIGH=$(grep HIGH bandit_results.txt | wc -l)
+        MEDIUM=$(grep MEDIUM bandit_results.txt | wc -l)
+        LOW=$(grep LOW bandit_results.txt | wc -l)
+        echo "ISSUES=$((HIGH + MEDIUM + LOW))" >> $GITHUB_ENV
+    - name: Create Bandit Badge
+      uses: schneegans/dynamic-badges-action@v1.7.0
+      with:
+        auth: ${{ secrets.GIST_SECRET }}
+        gistID: <your-gist-id>
+        filename: bandit-badge.json
+        label: Bandit
+        message: ${{ env.ISSUES }} issues
+        color: ${{ env.ISSUES == 0 && 'success' || 'important' }}

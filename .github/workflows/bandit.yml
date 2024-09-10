@@ -25,11 +25,11 @@ jobs:
 
     - name: Count Bandit issues
       run: |
-        undefined=$(grep -A4 "Total issues (by severity):" bandit_results.txt | grep "Undefined:" | awk '{print $2}')
+        UNDEFINED=$(grep -A4 "Total issues (by severity):" bandit_results.txt | grep "Undefined:" | awk '{print $2}')
         LOW=$(grep -A4 "Total issues (by severity):" bandit_results.txt | grep "Low:" | awk '{print $2}')
         MEDIUM=$(grep -A4 "Total issues (by severity):" bandit_results.txt | grep "Medium:" | awk '{print $2}')
         HIGH=$(grep -A4 "Total issues (by severity):" bandit_results.txt | grep "High:" | awk '{print $2}')
-        echo "ISSUES=$((HIGH + MEDIUM + LOW))" >> $GITHUB_ENV
+        echo "ISSUES=$((UNDEFINED + HIGH + MEDIUM + LOW))" >> $GITHUB_ENV
     - name: Create Bandit Badge
       uses: schneegans/dynamic-badges-action@v1.7.0
       with:

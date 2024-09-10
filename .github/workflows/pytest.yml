@@ -1,4 +1,4 @@
-  name: Homework 2 PyTest
+name: Homework 2 PyTest
 
 on: [push]
 

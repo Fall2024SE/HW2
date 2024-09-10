@@ -10,7 +10,7 @@ def print_python_version():
 def random_array(arr):
      
     shuffled_num = None
-    for i in enumerate(len(arr)):
+    for i, num in enumerate(arr):
         shuffled_num = subprocess.run(
             ["shuf", "-i1-20", "-n1"], capture_output=True)
         arr[i] = int(shuffled_num.stdout)

@@ -33,7 +33,7 @@ jobs:
       uses: schneegans/dynamic-badges-action@v1.7.0
       with:
         auth: ${{ secrets.GIST_SECRET }}
-        gistID: <your-gist-id>
+        gistID: 9e3dbad75febc40ad9e435dde5911abf
         filename: bandit-badge.json
         label: Bandit
         message: ${{ env.ISSUES }} issues

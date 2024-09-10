@@ -17,6 +17,6 @@ def random_array(arr):
     list
         The modified list where each element is replaced with a random number from 1 to 20.
     """
-    for i in range(len(arr)):
+    for i, _ in enumerate(len(arr)):
         arr[i] = secrets.randbelow(21)
     return arr

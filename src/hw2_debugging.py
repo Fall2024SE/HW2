@@ -42,7 +42,7 @@ def recombine(left_arr, right_arr):
     Returns:
     --------
     list
-        A new list containing all elements from `left_arr` and `right_arr`, 
+        A new list containing all elements from `left_arr` and `right_arr`,
         sorted in ascending order.
 
     """

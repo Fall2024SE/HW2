@@ -18,7 +18,7 @@ jobs:
     - name: Run Bandit
       run:  bandit -r ./src --skip B101 --exit-zero > bandit_results.txt
     - name: Upload Bandit results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: bandit-results
         path: bandit_results.txt

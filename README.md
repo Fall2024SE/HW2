@@ -1,7 +1,7 @@
 # Homework 2
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Fall2024SE/HW2/blob/main/LICENSE.md)
-![alt text](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![alt text](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Platform: Linux](https://img.shields.io/badge/Platform-Linux-green.svg)
+![Python Version](https://img.shields.io/badge/Python-3.13-green.svg)
 [![alt_text](https://github.com/Fall2024SE/HW2/actions/workflows/pytest.yml/badge.svg)](https://github.com/Fall2024SE/HW2/actions/workflows/pytest.yml)
 
 

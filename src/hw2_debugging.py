@@ -14,7 +14,8 @@ def merge_sort(nums):
     Returns:
     --------
     list
-        A new list containing the elements of `nums`, sorted in ascending order.
+        A new list containing the elements of `nums`,
+        sorted in ascending order.
 
     """
     if len(nums) <= 1:
@@ -29,8 +30,10 @@ def recombine(left_arr, right_arr):
     """
     Merges two sorted arrays into a single sorted array.
 
-    This function takes two sorted arrays, `left_arr` and `right_arr`, and merges them into a single
-    sorted array by comparing elements from each and inserting them into their correct position.
+    This function takes two sorted arrays,
+    `left_arr` and `right_arr`, and merges them into a single
+    sorted array by comparing elements from each and inserting
+    them into their correct position.
 
     Parameters:
     -----------

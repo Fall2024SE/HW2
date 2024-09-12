@@ -6,7 +6,8 @@ import secrets
 
 def random_array(arr):
     """
-    Replaces each element in the input array with a random number between 1 and 20.
+    Replaces each element in the input array with a
+    random number between 1 and 20.
 
     Parameters:
     -----------
@@ -16,7 +17,8 @@ def random_array(arr):
     Returns:
     --------
     list
-        The modified list where each element is replaced with a random number from 1 to 20.
+        The modified list where each element is replaced
+        with a random number from 1 to 20.
     """
     for i, _ in enumerate(arr):
         arr[i] = secrets.randbelow(21)

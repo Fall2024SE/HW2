@@ -1,7 +1,0 @@
-[file:/Users/korupt/Downloads/hw2/rand.py]
---->  2 issue(s) to fix {'E302': {3}, 'E501': {6}}
---->  0 issue(s) to fix {}
-[file:/Users/korupt/Downloads/hw2/hw2_debugging.py]
---->  5 issue(s) to fix {'E302': {11, 3}, 'E226': {7}, 'E305': {31}, 'W391': {36}}
---->  1 issue(s) to fix {'E225': {8}}
---->  0 issue(s) to fix {}
